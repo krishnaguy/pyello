@@ -11,4 +11,4 @@ RUN python --version
 
 COPY . .
 
-CMD [ "python", "--version" ]
+CMD [ "flask", "run" ]
