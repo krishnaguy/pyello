@@ -8,7 +8,10 @@ pipeline{
         stage('First') {
             steps {
                 sh 'ls'
-                docker build registry + ":BUILD_NUMBER"
+                script {
+                    docker build registry + ":BUILD_NUMBER"
+                }
+                
             }
             
         }
