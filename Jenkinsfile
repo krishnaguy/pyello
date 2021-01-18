@@ -1,8 +1,11 @@
 pipeline{
     agent any
-    stages('First') {
-        stage {
-            sh 'ls'
+    stages {
+        stage('First') {
+            steps {
+                sh 'ls'
+            }
+            
         }
     }
 }
